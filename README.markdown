@@ -14,6 +14,8 @@ $ npm install p3p
 
 ### Simple Usage (Recommended P3P Settings)
 
+*Our recommended settings output:* `CP="NOI ADM DEV PSAi OUR OTRo STP IND COM NAV DEM"`
+
 ```javascript
 var express = require('express')
   , p3p = require('p3p')
