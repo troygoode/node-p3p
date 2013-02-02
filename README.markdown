@@ -37,14 +37,15 @@ app.listen(80, function(){
 ```javascript
 var express = require('express')
   , p3p = require('p3p')
-  , p3pConfig = {
-    access: 'nonident',
-    purpose: {
-      current: true,
-      'individual-analysis': 'opt-in'
-    }
-  }
   , app = express();
+
+var p3pConfig = {
+  access: 'nonident',
+  purpose: {
+    current: true,
+    'individual-analysis': 'opt-in'
+  }
+};
 
 app.get('/', p3p(p3pConfig), function(req, res, next){
   res.send('Rendered with a *CUSTOM* P3P privacy policy header!');
