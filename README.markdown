@@ -4,15 +4,15 @@ A node.js package for providing a connect/express middleware that enables P3P wi
 
 [![build status](https://secure.travis-ci.org/TroyGoode/node-p3p.png)](http://travis-ci.org/TroyGoode/node-p3p)
 
-# Usage
+## Usage
 
 *TODO*
 
-# The Compact Specification
+## The Compact Specification
 
 [http://compactprivacypolicy.org/compact_specification.htm](http://compactprivacypolicy.org/compact_specification.htm)
 
-# License
+## License
 
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
 
