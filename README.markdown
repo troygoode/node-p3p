@@ -12,7 +12,44 @@ $ npm install p3p
 
 ## Usage
 
-*TODO*
+### Simple Usage (Recommended P3P Settings)
+
+```javascript
+var express = require('express')
+  , p3p = require('p3p')
+  , app = express();
+
+app.get('/', p3p(p3p.recommended), function(req, res, next){
+  res.send('Rendered with a P3P privacy policy header!');
+});
+
+app.listen(80, function(){
+  console.log('P3P-enabled web server listening on port 80');
+});
+```
+
+### Advanced Usage (Custom P3P Settings)
+
+```javascript
+var express = require('express')
+  , p3p = require('p3p')
+  , p3pConfig = {
+    access: 'nonident',
+    purpose: {
+      current: true,
+      'individual-analysis': 'opt-in'
+    }
+  }
+  , app = express();
+
+app.get('/', p3p(p3pConfig), function(req, res, next){
+  res.send('Rendered with a *CUSTOM* P3P privacy policy header!');
+});
+
+app.listen(80, function(){
+  console.log('*CUSTOM* P3P-enabled web server listening on port 80');
+});
+```
 
 ## The Compact Specification
 
