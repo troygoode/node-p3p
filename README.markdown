@@ -32,6 +32,8 @@ app.listen(80, function(){
 
 ### Advanced Usage (Custom P3P Settings)
 
+*This example would output:* `CP="NOI CUR PSAi"`
+
 ```javascript
 var express = require('express')
   , p3p = require('p3p')
