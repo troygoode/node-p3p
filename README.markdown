@@ -2,6 +2,8 @@
 
 A node.js package for providing a connect/express middleware that enables P3P with various options.
 
+[![NPM](https://nodei.co/npm/p3p.png?downloads=true&stars=true)](https://nodei.co/npm/p3p/)
+
 [![build status](https://secure.travis-ci.org/TroyGoode/node-p3p.png)](http://travis-ci.org/TroyGoode/node-p3p)
 
 ## Installation (via [npm](https://npmjs.org/package/p3p))
